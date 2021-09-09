@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+<!-- Simple line icons-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet"/>
 </head>
 <body>
-    MAIN PAGE
-    <br> 
-    <a href="/upload">사진올리기 또는 촬영<b>upload page</b></a>
+<!-- index page-->
+<a href="/about">앱설명서</a>
+<section class="content-section bg-primary text-white">
+
+<div class="container px-4 px-lg-5 text-center">
+	<h4 class="mb-4">YOLOv3와 TTS를 이용한 유아들의 영어소통 어플리케이션</h4>
+	<a class="btn btn-xl btn-dark" href="/spell">사물찾기</a>
+	<a class="btn btn-xl btn-light me-4" href="/upload">단어찾기</a>
+</div>
+</section>
+<!-- Footer icon-->
+<footer class="footer text-center">
+<div class="container px-4 px-lg-5">
+	<ul class="list-inline mb-5">
+		<li class="list-inline-item">
+        <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com"><i class="icon-social-facebook"></i></a>
+		</li>
+		<li class="list-inline-item">
+		<a class="social-link rounded-circle text-white mr-3" href="https://www.twitter.com"><i class="icon-social-twitter"></i></a>
+		</li>
+		<li class="list-inline-item">
+		<a class="social-link rounded-circle text-white" href="https://www.github.com"><i class="icon-social-github"></i></a>
+		</li>
+	</ul>
+	<p class="text-muted small mb-0">
+		Copyright &copy; 2021 Yugi-Seong
+	</p>
+</div>
+</footer>
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

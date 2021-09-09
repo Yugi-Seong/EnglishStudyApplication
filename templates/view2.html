@@ -2,23 +2,23 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>tts</title>
+<title>view</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
 <!-- Simple line icons-->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet"/>
 </head>
 <body>
-<!-- 영어듣기 페이지 page-->
+<!-- index page-->
 <section class="content-section bg-primary text-white">
 <div class="container px-4 px-lg-5 text-center">
-	<h4 class="mb-4">영어듣기실행</h4>
+	<h4 class="mb-4">인식한 객체 확인</h4>
 	<p>
-		<audio src="static/audio/output.mp3" autoplay controls></audio>
+		<img src="{{ url_for('static', filename='img/Image.jpg' )}}" style="max-width:100%; height: 100%;">
 	</p>
-	<a class="btn btn-xl btn-dark" href="/">첫페이지</a>
-	<a class="btn btn-xl btn-light me-4" href="/upload">사진촬영</a>
+	<p>참 잘했어요.{{ list_label }}를 잘 찾았습니다.</p>
+	<a class="btn btn-xl btn-dark" href='http://127.0.0.1:80/tts'>영어듣기</a>
+	<a class="btn btn-xl btn-light me-4" href="/upload">뒤로가기</a>
+
 </div>
 </section>
 <!-- Footer icon-->
@@ -40,6 +40,7 @@
 	</p>
 </div>
 </footer>
+
 <!-- Scroll to Top Button-->
 <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
 <!-- Bootstrap core JS-->
